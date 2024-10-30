@@ -190,7 +190,7 @@ nav {
 
 /* Images Section */
 .image-section {
-    margin-top: 50px;
+    margin-top: 90px;
     position: relative;
     max-width: 100%; 
     background-image: url('../assets/images/Image.jpg'); 
@@ -200,21 +200,27 @@ nav {
     height: 100vh; /* Set a height for the section */
 }
 
-/* Slideshow container */
+.image-section > h1 {
+    text-align: center;
+    font-size: 35px;
+    padding: 50px;
+}
+
+
 .slideshow-container {
-    display: flex; /* Set to flex to arrange items in a row */
-    max-width: 1000px;
+    display: flex; 
+    max-width: 800px;
     position: relative;
     margin: auto;
-    overflow: hidden; /* Hide overflow to prevent scrollbars */
+    overflow: hidden; 
+    margin-top: 40px; 
 }
 
-/* Each slide should take full width */
 .mySlides {
-    flex: 0 0 100%; /* Prevent shrink and set the width to 100% */
+    flex: 0 0 100%; 
 }
 
-/* Next & previous buttons */
+
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -230,18 +236,16 @@ nav {
     user-select: none;
 }
   
-/* Position the "next button" to the right */
+
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
   
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
 }
   
-/* Caption text */
 .text {
     color: #f2f2f2;
     font-size: 15px;
@@ -258,7 +262,7 @@ nav {
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
-    top: 0;
+    bottom: 0;
 }
   
 /* The dots/bullets/indicators */
@@ -292,4 +296,3 @@ nav {
 @media only screen and (max-width: 300px) {
     .prev, .next,.text {font-size: 11px}
 }
-
