@@ -9,3 +9,6 @@
         heroContents.style.transform = `translateY(${scrollPosition * 0.3}px)`;
     });
 
+
+    
+

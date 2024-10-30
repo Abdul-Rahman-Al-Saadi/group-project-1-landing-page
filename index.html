@@ -45,16 +45,42 @@
         </section>
 
         <!-- Images Section -->
-        <section class="image-section">
-            <div class="slider">
-                <div id="images">
-                    <img class="image" src="assets/images/game-image1.png" alt="Game Image 1">
-                    <img class="image" src="assets/images/game-image2.png" alt="Game Image 2">
-                    <img class="image" src="assets/images/game-image3.png" alt="Game Image 3">
-                    <img class="image" src="assets/images/game-image4.png" alt="Game Image 4">
+        <section>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="assets/images/game-image1.png" style="width:100%">
+                    <div class="text">Caption Text</div>
                 </div>
-                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="assets/images/game-image2.png" style="width:100%">
+                    <div class="text">Caption Two</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="assets/images/game-image3.png" style="width:100%">
+                    <div class="text">Caption Three</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="assets/images/game-image4.png" style="width:100%">
+                    <div class="text">Caption Four</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
         </section>
 
