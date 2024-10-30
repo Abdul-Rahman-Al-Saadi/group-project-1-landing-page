@@ -1,0 +1,16 @@
+.gray-bg{
+    background-color: #D9D9D9;
+}
+
+.black-txt {
+    color: #000000;
+}
+
+.white-txt {
+    color: #FFFFFF
+}
+
+.opaque {
+    background-color: #D9D9D9;
+    opacity: 50%;
+}
