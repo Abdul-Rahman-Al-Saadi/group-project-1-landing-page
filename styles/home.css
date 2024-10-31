@@ -1,3 +1,4 @@
+/* Reset */
 * {
     padding: 0;
     margin: 0;
@@ -6,13 +7,182 @@
     font-family: "Press Start 2P", system-ui;
 }
 
+/* Body */
+body {
+    font-family: 'Press Start 2P', cursive;
+}
 
-/* Hero Section
-/*
+/* Navbar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar Logo */
+.nav-logo img {
+    width: 60px;
+    height: auto;
+}
+
+/* Navbar Title */
+.nav-title h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.2rem;
+    margin-right: 850px;
+    width: 40px;
+}
+
+/* Navbar Links */
+.nav-links ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links ul li {
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for links */
+.nav-links ul li:hover {
+    color: #ffcc00;
+}
 
 
 
-*/
+/* Tablet Responsiveness (768px and below) */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .nav-title h1 {
+        font-size: 1.1rem;
+        margin-right: 70px;
+        text-align: center;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        padding-top: 10px;
+    }
+}
+
+/* Phone Responsiveness (480px and below) */
+@media (max-width: 480px) {
+    nav {
+        padding: 15px;
+    }
+
+    .nav-title h1 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .nav-links ul li {
+        font-size: 0.9rem;
+    }
+
+    .nav-logo img {
+        width: 50px;
+    }
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    background-image: url('../assets/images/hero.jpg'); /* Update the path to your image */
+    background-size: cover;
+    background-position: top;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Hero Overlay */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+    z-index: 1;
+}
+
+/* Hero Text */
+#hero-contents {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-section h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Play Button */
+.hero-section button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #ffcc00;
+    background-color: #333;
+    border: 2px solid #ffcc00;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hero-section button:hover {
+    background-color: #ffcc00;
+    color: #333;
+}
+
+/* Tablet Responsiveness (768px and below) */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 70vh;
+    }
+    
+    .hero-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-section button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Phone Responsiveness (480px and below) */
+@media (max-width: 480px) {
+    .hero-section {
+        height: 60vh;
+    }
+    
+    .hero-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-section button {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+}
 
 
 /* 
