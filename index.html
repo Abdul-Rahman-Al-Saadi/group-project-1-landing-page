@@ -7,9 +7,18 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Press+Start+2P&display=swap"
         rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Press+Start+2P&display=swap" rel="stylesheet">
+
     <!-- <link rel="stylesheet" href="./test.css"> -->
+
     <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/base/utilities.css">
     <link rel="stylesheet" href="styles/base/colors.css">
@@ -44,6 +53,51 @@
                 <button>Play</button>
             </div>
         </section>
+
+
+        <!-- Images Section -->
+        <section class="image-section">
+            <h1 class="white-txt">Images of the Game</h1>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="assets/images/game-image1.png" style="width:100%">
+                    <div class="text">Menu Screen</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="assets/images/game-image2.png" style="width:100%">
+                    <div class="text">Lily</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="assets/images/game-image3.png" style="width:100%">
+                    <div class="text">End of Game</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="assets/images/game-image4.png" style="width:100%">
+                    <div class="text">Masonr</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </section>
+
+
+
         <section class="story-section flex-column brown-bg">
             <h2 class="white-txt">Dungeon Crawler is a 2D maze game where you escape a dangerous dungeon</h2>
             <div class="story-container space-around">
@@ -89,6 +143,7 @@
                 </div>
             </div>
         </section>
+
     </main>
 
 </body>
