@@ -10,6 +10,8 @@ window.addEventListener('scroll', function () {
 });
 
 
+
+
 // Function used in slider:
 
 let slideIndex = 1;
