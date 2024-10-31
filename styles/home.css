@@ -500,7 +500,9 @@ footer {
     height: auto; 
     padding: 20px; 
     background: rgba(75, 70, 111, 0.8); 
-    color: #F56469;
+    /* color: #F56469; */
+    background-color: #f2f2f2; 
+    color: black;
     text-align: center; 
     z-index: 1; 
 }
@@ -518,7 +520,8 @@ footer {
 
 .footer-links a {
     text-decoration: none; 
-    color: #F56469; 
+    /* color: #F56469;  */
+    color: black;
     transition: color 0.3s; 
 }
 
@@ -543,7 +546,8 @@ footer {
 
 .footer-icons .icon {
     margin: 0 20px; 
-    color: #F56469; 
+    /* color: #F56469;  */
+    color: black;
     font-size: 30px; 
     transition: color 0.3s; 
 }
