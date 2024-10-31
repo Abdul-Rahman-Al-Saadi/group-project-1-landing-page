@@ -2,7 +2,9 @@
 * {
     padding: 0;
     margin: 0;
+    border: 0;
     box-sizing: border-box;
+    font-family: "Press Start 2P", system-ui;
 }
 
 /* Body */
@@ -200,6 +202,7 @@ nav {
     height: 100vh; /* Set a height for the section */
 }
 
+
 .image-section > h1 {
     text-align: center;
     font-size: 35px;
@@ -296,3 +299,79 @@ nav {
 @media only screen and (max-width: 300px) {
     .prev, .next,.text {font-size: 11px}
 }
+
+/* 
+Story Section
+*/
+.story-section {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.story-section h2 {
+    text-align: center;
+    margin: 50px;
+    font-size: 25px;
+}
+
+.story-container {
+    display: flex;
+   flex-direction: row;
+   width: 100%;
+   height: 70%;
+   gap: 20px;
+   flex-wrap: wrap;
+}
+
+.story-card {
+    display: flex;
+    align-content: center;
+    overflow-wrap: break-word;
+    flex:1.5;
+    max-width: 700px;
+    min-width: 250px;
+    margin: 0 30px;
+    border-radius: 25px;
+}
+
+.story-container p {
+    font-size: 18px;
+    padding: 15px;
+    line-height: 1.5;
+    text-align: center;
+    align-content: center;
+    /* flex: 1;  */
+    max-width: 100%;
+    width: fit-content;
+    height: inherit;
+    max-height: 100%;
+    overflow-wrap: break-word;
+    /* padding-bottom: 20px; */
+}
+
+.story-img {
+    margin: 0 20px;
+    max-width: 300px;
+    min-width: 250px;
+    flex: 1;
+}
+.story-img > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 550px) {
+    .story-container {
+        /* flex-direction: column; */
+        flex-wrap: wrap;/* Stack items vertically on smaller screens */
+    }
+
+    .story-card {
+        margin-bottom: 20px; /* Add space below the card */
+    }
+}
+
+
