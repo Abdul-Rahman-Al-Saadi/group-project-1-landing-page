@@ -439,6 +439,7 @@ Story Section
 }
 
 
+
 /* Footer Section */
 footer {
     margin-top: 80px;
@@ -559,6 +560,102 @@ footer {
     .social_network h1 {
         font-size: 19px;
     }
+}
+
+
+
+
+.character-section {
+    background-image: url('../assets/images/characters.png');
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    height: 100vh;
+    padding: 20px;
+    z-index: 1;
+}
+
+.character-section *{
+    z-index: 1;
+    position: relative;
+}
+
+.character-section::before {
+    content: ''; /* Necessary for the pseudo-element */
+    position: absolute; /* Position it relative to the parent */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.15); /* Adjust color and opacity */
+    z-index: 0; /* Position it below the content */
+}
+
+.character-section h2 {
+    text-align: center;
+    color: white;
+    margin: 40px;
+    
+}
+
+.character-section > div {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+    
+}
+
+.mason-div {
+    justify-content: flex-start;
+    margin: 0 20px;
+    width: 75%;
+}
+
+.lily-div {
+    justify-content:flex-end;
+    float: inline-end;
+    width: 75%;
+}
+
+.character-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    height: 200px;
+}
+
+.character-container > div {
+    width: 150px;
+    height: 150px;
+}
+
+.character-container h4 {
+    color: white;
+}
+
+.character-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.character-story {
+    background-color: rgba(255, 255, 255, 0.2);
+    height: min-content;
+    max-width: 500px;
+    z-index: 1;
+}
+
+.character-story h5 {
+    margin: 5px;
+    font-size: 14px;
+}
+
+.character-story p {
+    margin: 5px;
+    font-size: 12px;
 }
 
 
